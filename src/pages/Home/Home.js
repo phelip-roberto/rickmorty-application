@@ -1,5 +1,6 @@
 import { useState } from "react"
-import logo from '../../assets/logo.svg';
+import logo from "../../assets/logo.svg";
+import Card from "../../components/Card/Card";
 
 const Home = () => {
 
@@ -19,9 +20,12 @@ const Home = () => {
         <div className="col-8 mx-auto mt-5">
           <img src={logo} className="Logo" alt="logo"></img>
         </div>
-        <div className="col-8 mx-auto mt-4">
-          <input type="text" className="Search" value={content} onChange={handleChange} />
-          <button className="Btn-search" onClick={showAlert}>Search</button>
+        <div className="col-sm-8 col-10 mx-auto mt-5">
+          <input type="text" className="Search Inputs mr-sm-2 mr-1" placeholder="Search characters" value={content} onChange={handleChange} />
+          <button className="Btn-search Inputs ml-sm-2 ml-1" onClick={showAlert}>Search</button>
+        </div>
+        <div className="col-10 mx-auto mt-3">
+          <Card />
         </div>
       </div>
 
