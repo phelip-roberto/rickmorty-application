@@ -134,3 +134,12 @@
   width: 254px;
   height: 223px;
 }
+
+.card-wrapper {
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
