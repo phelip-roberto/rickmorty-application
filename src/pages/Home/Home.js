@@ -2,6 +2,7 @@ import { useState } from "react"
 import logo from "../../assets/logo.svg";
 import SectionCard from "../../components/Section-Card/SectionCard";
 import axios from "axios";
+// import Loader from "../../components/Loader/Loader";
 
 const apiUrl = "https://rickandmortyapi.com/graphql";
 
@@ -17,13 +18,29 @@ const Home = () => {
   async function consumeApi() {
     let query = `
       query {
-        characters(filter: { name: "${name}" }) {
+        characters(page: 1, filter: { name: "${name}" }) {
+          info {
+            count
+            pages
+            next
+            prev
+          }
           results {
             id
             name
             status
             species
             image
+            origin {
+              name
+              type
+              dimension
+            }
+            location {
+              name
+              type
+              dimension
+            }
           }
         }
       }
@@ -36,6 +53,8 @@ const Home = () => {
         query: query
       }
     });
+
+    console.log(res.data.data.characters)
 
     if (res.status === 200) setResponse(res.data.data.characters)
     else setResponse([])
@@ -56,10 +75,18 @@ const Home = () => {
             {response ? <SectionCard res={response} /> : ''}
           </section>
         </div>
+        {response ?
+          <div className="col-8 mx-auto my-3 d-flex justify-content-center">
+            <ul className="card-pages list-group list-group-horizontal">
+              <li key="prev" className="mx-2 list-group-item "><i className="fas fa-angle-left"></i></li>
+              {[1, 2, 3, 4, 5].map(p => <li key={p} className="mx-2 list-group-item ">{p}</li>)}
+              <li key="next" className="mx-2 list-group-item "><i className="fas fa-angle-right"></i></li>
+            </ul>
+          </div>
+          : ''}
       </div>
 
-
-
+      {/* <Loader /> */}
     </>
   )
 }

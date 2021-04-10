@@ -11,7 +11,7 @@ const SectionCard = ({ res }) => {
     <>
       <div className="card-wrapper">
         {characters.map(c =>
-          <Card key={c.id} img={c.image} status={c.status} name={c.name} species={c.species} />
+          <Card key={c.id} img={c.image} status={c.status} name={c.name} species={c.species} origin={c.origin} location={c.location} />
         )}
       </div>
     </>
