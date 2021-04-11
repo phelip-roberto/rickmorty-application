@@ -3,6 +3,7 @@ import axios from "axios";
 import logo from "../../assets/logo.svg";
 import SectionCard from "../../components/Section-Card/SectionCard";
 import Pagination from "../../components/Pagination/Pagination";
+import Loader from "react-loader-spinner";
 
 const apiUrl = "https://rickandmortyapi.com/graphql";
 
@@ -11,6 +12,7 @@ const Home = () => {
   const [name, setName] = useState('');
   const [response, setResponse] = useState('');
   const [info, setInfo] = useState('');
+  const [loader, setLoader] = useState(false);
 
 
   function handleChange(event) {
@@ -18,6 +20,7 @@ const Home = () => {
   }
 
   async function consumeApi(appPage = 1) {
+    setLoader(true);
 
     let query = `
       query {
@@ -61,6 +64,7 @@ const Home = () => {
     if (res.status === 200) {
       setInfo(res.data.data.characters.info)
       setResponse(res.data.data.characters)
+      setLoader(false);
     }
     else {
       setInfo([])
@@ -87,7 +91,14 @@ const Home = () => {
           <Pagination info={info} consumeApi={consumeApi} />
           : ''}
       </div>
-
+      <Loader
+        type="Puff"
+        color="#00BFFF"
+        height={250}
+        width={250}
+        timeout={3000} //3 secs
+        visible={loader}
+      />
     </>
   )
 }
