@@ -13,7 +13,9 @@ Design of an Application related to the Rick And Morty drawing. Such a project w
   </a> 
 </p>
 
-![alt text](https://cdn.europosters.eu/image/750/rick-and-morty-logo-i46647.jpg)
+<p align="center">
+   <img src="https://cdn.europosters.eu/image/750/rick-and-morty-logo-i46647.jpg" alt="Rick and Morty Logo"/>
+</p>
 
 ## :computer: Technologies
 
@@ -60,17 +62,8 @@ $ npm install
 
 ``` bash
 
-# serve at localhost:4200 with the proxy configuration for the use of the services
+# serve at localhost:3000 with the proxy configuration for the use of the services
 $ npm start
-
-# serve with hot reload at localhost:4200
-$ ng serve
-
-# serve with hot reload at localhost:4200, opening when finish to serve
-$ ng serve --open
-
-# serve with hot reload at defined port
-$ ng serve --open --port=XXXX
 
 # build for production with minification
 $ npm run build
