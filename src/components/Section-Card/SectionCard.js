@@ -3,9 +3,6 @@ import Card from "../Card/Card";
 
 const SectionCard = ({ res }) => {
 
-  // eslint-disable-next-line
-  // const [characters, setCharacters] = useState(res.results);
-
   const characters = res.results;
 
   return (

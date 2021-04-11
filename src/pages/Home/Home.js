@@ -34,6 +34,7 @@ const Home = () => {
             status
             species
             image
+            gender
             origin {
               name
               type

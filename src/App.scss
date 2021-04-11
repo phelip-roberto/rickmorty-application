@@ -138,6 +138,7 @@
 .card {
   width: 254px;
   height: 223px;
+  cursor: pointer;
 
   @media screen and (min-width: 576px) {
     width: 223px;
@@ -159,7 +160,7 @@
 }
 
 .actualPage {
-  color: #CBD736;
+  color: #CBD736 !important;
 }
 
 .card-pages {
@@ -227,6 +228,6 @@
 }
 
 .disabled {
-  pointer-events:none;
-  opacity:0.6; 
+  pointer-events:none !important;
+  opacity:0.6 !important; 
 }
