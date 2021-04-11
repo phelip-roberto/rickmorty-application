@@ -225,3 +225,8 @@
     line-height: 38px;
   }
 }
+
+.disabled {
+  pointer-events:none;
+  opacity:0.6; 
+}

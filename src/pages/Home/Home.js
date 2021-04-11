@@ -1,24 +1,27 @@
 import { useState } from "react"
+import axios from "axios";
 import logo from "../../assets/logo.svg";
 import SectionCard from "../../components/Section-Card/SectionCard";
-import axios from "axios";
-// import Loader from "../../components/Loader/Loader";
+import Pagination from "../../components/Pagination/Pagination";
 
 const apiUrl = "https://rickandmortyapi.com/graphql";
 
 const Home = () => {
 
   const [name, setName] = useState('');
-  const [response, setResponse] = useState('')
+  const [response, setResponse] = useState('');
+  const [info, setInfo] = useState('');
+
 
   function handleChange(event) {
     setName(event.target.value);
   }
 
-  async function consumeApi() {
+  async function consumeApi(appPage = 1) {
+
     let query = `
       query {
-        characters(page: 1, filter: { name: "${name}" }) {
+        characters(page: ${appPage}, filter: { name: "${name}" }) {
           info {
             count
             pages
@@ -54,10 +57,14 @@ const Home = () => {
       }
     });
 
-    console.log(res.data.data.characters)
-
-    if (res.status === 200) setResponse(res.data.data.characters)
-    else setResponse([])
+    if (res.status === 200) {
+      setInfo(res.data.data.characters.info)
+      setResponse(res.data.data.characters)
+    }
+    else {
+      setInfo([])
+      setResponse([])
+    }
   }
 
   return (
@@ -76,17 +83,10 @@ const Home = () => {
           </section>
         </div>
         {response ?
-          <div className="col-8 mx-auto my-3 d-flex justify-content-center">
-            <ul className="card-pages list-group list-group-horizontal">
-              <li key="prev" className="mx-2 list-group-item "><i className="fas fa-angle-left"></i></li>
-              {[1, 2, 3, 4, 5].map(p => <li key={p} className="mx-2 list-group-item ">{p}</li>)}
-              <li key="next" className="mx-2 list-group-item "><i className="fas fa-angle-right"></i></li>
-            </ul>
-          </div>
+          <Pagination info={info} consumeApi={consumeApi} />
           : ''}
       </div>
 
-      {/* <Loader /> */}
     </>
   )
 }

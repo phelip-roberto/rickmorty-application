@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal from '@material-ui/core/Modal';
 
-const Card = ({ img, status, name, species, origin, location }) => {
+const Card = ({ img, status, name, species, origin, location, gender }) => {
 
   // eslint-disable-next-line
   const [alive, setAlive] = useState(status);
@@ -38,7 +38,7 @@ const Card = ({ img, status, name, species, origin, location }) => {
       <>
         <div className="row mt-2 mb-3">
           <p className="info-title">A B O U T</p>
-          <h6>Teste</h6>
+          <h6>Name: {name};  Status: {status};   Specie: {species};   Gender: {gender} </h6>
         </div>
         <div className="row mt-2 mb-3">
           <p className="info-title">O R I G I N</p>
@@ -74,7 +74,7 @@ const Card = ({ img, status, name, species, origin, location }) => {
         aria-labelledby="Modal de Informações"
         aria-describedby="Modal com as informações complementares de cada personagem"
         className="Modal"
-        disableScrollLock="true"
+        disableScrollLock={true}
       >
         <div className="info-modal d-flex justify-content-center">
           <div className="col-12">
