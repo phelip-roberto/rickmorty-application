@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/rickmorty-application/static/css/main.bb7d75c5.chunk.css",
-    "main.js": "/rickmorty-application/static/js/main.99b48c85.chunk.js",
-    "main.js.map": "/rickmorty-application/static/js/main.99b48c85.chunk.js.map",
-    "runtime-main.js": "/rickmorty-application/static/js/runtime-main.771ef5f8.js",
-    "runtime-main.js.map": "/rickmorty-application/static/js/runtime-main.771ef5f8.js.map",
-    "static/css/2.ef9168ec.chunk.css": "/rickmorty-application/static/css/2.ef9168ec.chunk.css",
-    "static/js/2.590ab926.chunk.js": "/rickmorty-application/static/js/2.590ab926.chunk.js",
-    "static/js/2.590ab926.chunk.js.map": "/rickmorty-application/static/js/2.590ab926.chunk.js.map",
-    "static/js/3.45490b60.chunk.js": "/rickmorty-application/static/js/3.45490b60.chunk.js",
-    "static/js/3.45490b60.chunk.js.map": "/rickmorty-application/static/js/3.45490b60.chunk.js.map",
+    "main.css": "/rickmorty-application/static/css/main.134a37d0.chunk.css",
+    "main.js": "/rickmorty-application/static/js/main.31fcfae0.chunk.js",
+    "main.js.map": "/rickmorty-application/static/js/main.31fcfae0.chunk.js.map",
+    "runtime-main.js": "/rickmorty-application/static/js/runtime-main.d4a0c4a1.js",
+    "runtime-main.js.map": "/rickmorty-application/static/js/runtime-main.d4a0c4a1.js.map",
+    "static/css/2.88ce538f.chunk.css": "/rickmorty-application/static/css/2.88ce538f.chunk.css",
+    "static/js/2.97752a43.chunk.js": "/rickmorty-application/static/js/2.97752a43.chunk.js",
+    "static/js/2.97752a43.chunk.js.map": "/rickmorty-application/static/js/2.97752a43.chunk.js.map",
+    "static/js/3.1821c280.chunk.js": "/rickmorty-application/static/js/3.1821c280.chunk.js",
+    "static/js/3.1821c280.chunk.js.map": "/rickmorty-application/static/js/3.1821c280.chunk.js.map",
     "index.html": "/rickmorty-application/index.html",
-    "static/css/2.ef9168ec.chunk.css.map": "/rickmorty-application/static/css/2.ef9168ec.chunk.css.map",
-    "static/css/main.bb7d75c5.chunk.css.map": "/rickmorty-application/static/css/main.bb7d75c5.chunk.css.map",
-    "static/js/2.590ab926.chunk.js.LICENSE.txt": "/rickmorty-application/static/js/2.590ab926.chunk.js.LICENSE.txt",
+    "static/css/2.88ce538f.chunk.css.map": "/rickmorty-application/static/css/2.88ce538f.chunk.css.map",
+    "static/css/main.134a37d0.chunk.css.map": "/rickmorty-application/static/css/main.134a37d0.chunk.css.map",
+    "static/js/2.97752a43.chunk.js.LICENSE.txt": "/rickmorty-application/static/js/2.97752a43.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/rickmorty-application/static/media/background.62059cbb.svg",
     "static/media/logo.d8bb791a.svg": "/rickmorty-application/static/media/logo.d8bb791a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.771ef5f8.js",
-    "static/css/2.ef9168ec.chunk.css",
-    "static/js/2.590ab926.chunk.js",
-    "static/css/main.bb7d75c5.chunk.css",
-    "static/js/main.99b48c85.chunk.js"
+    "static/js/runtime-main.d4a0c4a1.js",
+    "static/css/2.88ce538f.chunk.css",
+    "static/js/2.97752a43.chunk.js",
+    "static/css/main.134a37d0.chunk.css",
+    "static/js/main.31fcfae0.chunk.js"
   ]
 }
