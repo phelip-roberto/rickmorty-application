@@ -40,7 +40,8 @@ const Pagination = ({ info, consumeApi }) => {
     <div className="col-8 mx-auto my-3 d-flex justify-content-center">
       <ul className="card-pages list-group list-group-horizontal">
         <li key="prev" className={`mx-2 list-group-item btn ${(info.prev === null) ? 'disabled' : ''}`} onClick={() => consumeApi(info.prev)}><i className="fas fa-angle-left"></i></li>
-        {pages.map(p => <li key={p} onClick={() => consumeApi(p)} className={`btn mx-2 list-group-item ${(p === actualPage) ? 'actualPage' : ''}`}>{p}</li>)}
+        {pages.map(p => <li key={p} onClick={() => consumeApi(p)} className={`btn d-none d-sm-block mx-2 list-group-item ${(p === actualPage) ? 'actualPage' : ''}`}>{p}</li>)}
+        <li key="actualPage" className={`btn d-sm-none mx-2 list-group-item actualPage`}>{actualPage}</li>
         <li key="next" className={`mx-2 list-group-item btn ${(info.next === null) ? 'disabled' : ''}`} onClick={() => consumeApi(info.next)}><i className="fas fa-angle-right"></i></li>
       </ul>
     </div>
