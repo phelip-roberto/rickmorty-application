@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Rick And Morty Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Design of an Application related to the Rick And Morty drawing. Such a project was developed using [React](https://pt-br.reactjs.org) and deploy using [GitHub Pages](https://pages.github.com) in: https://phelip-roberto.github.io/rickmorty-application/.
 
-## Available Scripts
+<p align="center">	
+   <a href="https://www.linkedin.com/in/phelip-roberto">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+   </a>
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/phelip-roberto/rickmorty-application?color=FB250">
 
-In the project directory, you can run:
+  <a href="https://github.com/phelip-roberto/rickmorty-application/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/phelip-roberto/rickmorty-application?color=FB250">
+  </a> 
+</p>
 
-### `npm start`
+![alt text](https://cdn.europosters.eu/image/750/rick-and-morty-logo-i46647.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :computer: Technologies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This project was developed using:
 
-### `npm test`
+* React - https://pt-br.reactjs.org
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* NodeJs - https://www.npmjs.com/get-npm
 
-### `npm run build`
+* Figma - https://www.figma.com/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Graphql - https://graphql.org
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* GitHub Pages - https://pages.github.com
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :book: Documentation
 
-### `npm run eject`
+* Documentation for get started with the stable version of [React](https://pt-br.reactjs.org/docs/getting-started.html);
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Documentation for get started with the latest version of [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/);
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Documentation for get started with [Graphql](https://graphql.org/learn/);
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Design that was used for developing this project: [InGaia Frontend - Rick And Morty](https://www.figma.com/file/PTsl4gp2OOoEXuddyEx6GH/Frontend-Test---Rick-and-Morty);
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* API that was used for developing this project: [Rick And Morty API](https://rickandmortyapi.com/graphql);
 
-## Learn More
+* Documentation for get started with [GitHub Pages](https://docs.github.com/en/pages);
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## :construction_worker: Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Clone repo
 
-### Code Splitting
+Copy all your files to your project folder and then:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+``` bash
+#go into app's directory
+$ cd rickmorty-application
 
-### Analyzing the Bundle Size
+# install app's dependencies
+$ npm install
+```
+### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+``` bash
 
-### Making a Progressive Web App
+# serve at localhost:4200 with the proxy configuration for the use of the services
+$ npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# serve with hot reload at localhost:4200
+$ ng serve
 
-### Advanced Configuration
+# serve with hot reload at localhost:4200, opening when finish to serve
+$ ng serve --open
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# serve with hot reload at defined port
+$ ng serve --open --port=XXXX
 
-### Deployment
+# build for production with minification
+$ npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `npm run build` fails to minify
+## What's included
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+
+rickmorty-application/
+├── src/
+│   ├── assests/
+│   ├── components/
+│   ├── pages/
+│   ├── App.js
+│   └── ...
+├── ...
+├── package.json
+└── ...
+```
