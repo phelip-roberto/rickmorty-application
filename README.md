@@ -14,7 +14,7 @@ Design of an Application related to the Rick And Morty drawing. Such a project w
 </p>
 
 <p align="center">
-   ![alt text](https://cdn.europosters.eu/image/750/rick-and-morty-logo-i46647.jpg)
+   <img src="https://cdn.europosters.eu/image/750/rick-and-morty-logo-i46647.jpg" alt="Rick and Morty Logo"/>
 </p>
 
 ## :computer: Technologies
@@ -62,7 +62,7 @@ $ npm install
 
 ``` bash
 
-# serve at localhost:4200 with the proxy configuration for the use of the services
+# serve at localhost:3000 with the proxy configuration for the use of the services
 $ npm start
 
 # build for production with minification
