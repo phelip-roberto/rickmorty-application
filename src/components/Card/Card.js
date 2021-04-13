@@ -74,10 +74,10 @@ const Card = ({ img, status, name, species, origin, location, gender }) => {
         aria-labelledby="Modal de Informações"
         aria-describedby="Modal com as informações complementares de cada personagem"
         className="Modal"
-        disableScrollLock={true}
       >
         <div className="info-modal d-flex justify-content-center">
           <div className="col-12">
+            <span className="mx-3 mt-4 btn d-sm-none" style={{ position: "absolute", color: "white" }} onClick={() => handleClose()}><i className="far fa-times-circle"></i></span>
             <div className="row mx-auto my-auto" style={{ width: '75%', minHeight: '50vh' }}>
               <div className="col-10 col-sm-4 my-5 my-sm-0 ">
                 {<InfoCard />}
